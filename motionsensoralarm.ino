@@ -10,7 +10,7 @@ int buzzerPin = D2;
 bool sent = 0; // right now the fact that the message has been sent is false 
 
 //MicroOLED oled(MODE_SPI, PIN_RESET, PIN_DC, PIN_CS);
-//build.particle.io/build/57583a01aa0ceee8e8000872#verify
+
 
 void setup() {
     pinMode(sens, INPUT_PULLUP);
@@ -38,7 +38,7 @@ void loop() {
         int qNote = 800;
         tone(buzzerPin, 392, qNote);
         delay(qNote);
-        delay(2000);        //https://build.particle.io/build/57583a01aa0ceee8e8000872#verify
+        delay(2000);        
 }
 
 else{
